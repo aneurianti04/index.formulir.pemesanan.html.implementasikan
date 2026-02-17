@@ -77,18 +77,28 @@
     <input type="email" name="email" required> <label>Buat PIN 6 Digit:</label> 
     <input type="password" name="pin" pattern="[0-9]{6}" maxlength="6" placeholder="Masukkan 6 digit angka" required> 
    </fieldset> 
-   <fieldset> <legend>Lokasi Penjemputan</legend> <label>Pilih Provinsi &amp; Kota:</label> <select name="lokasi" required> <option value="">-- Pilih Lokasi --</option> <optgroup label="DI Yogyakarta"> <option>DI Yogyakarta - Kota Yogyakarta</option> <option>DI Yogyakarta - Sleman</option> <option>DI Yogyakarta - Bantul</option> <option>DI Yogyakarta - Gunungkidul</option> </optgroup> <optgroup label="Jawa Tengah"> <option>Jawa Tengah - Magelang</option> <option>Jawa Tengah - Solo</option> <option>Jawa Tengah - Semarang</option> </optgroup> <optgroup label="DKI Jakarta"> <option>DKI Jakarta - Jakarta Pusat</option> <option>DKI Jakarta - Bandara Soekarno Hatta</option> </optgroup> <optgroup label="Jawa Barat"> <option>Jawa Barat - Bandung</option> <option>Jawa Barat - Bekasi</option> </optgroup> <optgroup label="Jawa Timur"> <option>Jawa Timur - Surabaya</option> <option>Jawa Timur - Malang</option> </optgroup> </select> <label>Meeting Point:</label> <select name="meeting_point" required> <option value="">-- Pilih Meeting Point --</option> <optgroup label="Bandara"> <option>Bandara YIA (Yogyakarta International Airport)</option> <option>Bandara Adi Sutjipto</option> <option>Bandara Soekarno Hatta</option> </optgroup> <optgroup label="Stasiun"> <option>Stasiun Tugu Yogyakarta</option> <option>Stasiun Lempuyangan</option> <option>Stasiun Solo Balapan</option> </optgroup> <optgroup label="Area Hotel"> <option>Hotel Area Malioboro</option> <option>Hotel Area Sleman</option> <option>Hotel Area Magelang</option> </optgroup> <optgroup label="Terminal"> <option>Terminal Giwangan</option> <option>Terminal Jombor</option> </optgroup> </select> 
-    <fieldset> <legend>Detail Keberangkatan</legend> <label>Cari Nama Destinasi:</label> 
+   <fieldset> 
+<legend>Lokasi Penjemputan</legend> 
+<label>Pilih Provinsi & Kota:</label> 
+<select name="lokasi" required> <option value="">-- Pilih Lokasi --</option> <optgroup label="DI Yogyakarta"> <option>DI Yogyakarta - Kota Yogyakarta</option> <option>DI Yogyakarta - Sleman</option> <option>DI Yogyakarta - Bantul</option> <option>DI Yogyakarta - Gunungkidul</option> </optgroup> <optgroup label="Jawa Tengah"> <option>Jawa Tengah - Magelang</option> <option>Jawa Tengah - Solo</option> <option>Jawa Tengah - Semarang</option> </optgroup> <optgroup label="DKI Jakarta"> <option>DKI Jakarta - Jakarta Pusat</option> <option>DKI Jakarta - Bandara Soekarno Hatta</option> </optgroup> <optgroup label="Jawa Barat"> <option>Jawa Barat - Bandung</option> <option>Jawa Barat - Bekasi</option> </optgroup> <optgroup label="Jawa Timur"> <option>Jawa Timur - Surabaya</option> <option>Jawa Timur - Malang</option> </optgroup> 
+</select> 
+<label>Meeting Point:</label> 
+<select name="meeting_point" required> 
+<option value="">-- Pilih Meeting Point --</option> <optgroup label="Bandara"> <option>Bandara YIA (Yogyakarta International Airport)</option> <option>Bandara Adi Sutjipto</option> <option>Bandara Soekarno Hatta</option> </optgroup> <optgroup label="Stasiun"> <option>Stasiun Tugu Yogyakarta</option> <option>Stasiun Lempuyangan</option> <option>Stasiun Solo Balapan</option> </optgroup> <optgroup label="Area Hotel"> <option>Hotel Area Malioboro</option> <option>Hotel Area Sleman</option> <option>Hotel Area Magelang</option> </optgroup> <optgroup label="Terminal"> <option>Terminal Giwangan</option> <option>Terminal Jombor</option> </optgroup> </select> 
+    <fieldset> 
+<legend>Detail Keberangkatan</legend> <label>Cari Nama Destinasi:</label> 
      <input type="search" name="destinasi" placeholder="Contoh: Goa Jomblang" required> <label>Tanggal Keberangkatan:</label> 
      <input type="date" name="tanggal" required> <label>Jam Kumpul:</label> 
      <input type="time" name="jam" required> <label>Jumlah Peserta (1-20 orang):</label> 
      <input type="number" name="jumlah" min="1" max="20" required> 
     </fieldset> 
-    <fieldset> <legend>Preferensi Personal</legend> <label>Link Profil Media Sosial:</label> 
+    <fieldset> 
+<legend>Preferensi Personal</legend> <label>Link Profil Media Sosial:</label> 
      <input type="url" name="profil" placeholder="https://instagram.com/username"> <label>Pilih Warna Kaos Grup:</label> 
      <input type="color" name="warna"> 
     </fieldset> 
-    <fieldset> <legend>Opsi Tambahan</legend> <label>Metode Pembayaran:</label>
+    <fieldset> 
+<legend>Opsi Tambahan</legend> <label>Metode Pembayaran:</label>
      <br> 
      <input type="radio" name="pembayaran" value="Full Payment" required> Full Payment
      <br> 
@@ -102,7 +112,8 @@
      <br> 
      <input type="checkbox" name="fasilitas" value="Dinner"> Paket Dinner Romantis
      <br>
-     <br> <label>Upload Scan KTP / Paspor:</label> 
+     <br> 
+<label>Upload Scan KTP / Paspor:</label> 
      <input type="file" name="identitas" accept=".jpg,.png,.pdf" required> 
     </fieldset> <button type="submit">Kirim Reservasi</button> 
     <div class="footer">
